@@ -4,7 +4,7 @@
 const { MongoClient } = require('mongodb');
 
 // Connection URI (replace with your MongoDB connection string if using Atlas)
-const uri = 'mongodb://localhost:27017';
+const uri =  'mongodb://localhost:27017';
 
 // Database and collection names
 const dbName = 'plp_bookstore';
@@ -131,7 +131,107 @@ const books = [
     in_stock: true,
     pages: 342,
     publisher: 'Thomas Cautley Newby'
-  }
+  },
+  {
+          title: "The Silent Patient",
+        author: "Alex Michaelides",
+        genre: "Thriller",
+        published_year: 2019,
+        price: 15.99,
+        in_stock: true,
+        pages: 336,
+        publisher: "Celadon Books"
+      },
+      {
+        title: "Educated",
+        author: "Tara Westover",
+        genre: "Memoir",
+        published_year: 2018,
+        price: 13.99,
+        in_stock: true,
+        pages: 352,
+        publisher: "Random House"
+      },
+      {
+        title: "Atomic Habits",
+        author: "James Clear",
+        genre: "Self-help",
+        published_year: 2018,
+        price: 17.99,
+        in_stock: true,
+        pages: 320,
+        publisher: "Avery"
+      },
+      {
+        title: "Becoming",
+        author: "Michelle Obama",
+        genre: "Biography",
+        published_year: 2018,
+        price: 19.99,
+        in_stock: false,
+        pages: 448,
+        publisher: "Crown"
+      },
+      {
+        title: "The Midnight Library",
+        author: "Matt Haig",
+        genre: "Fantasy",
+        published_year: 2020,
+        price: 14.99,
+        in_stock: true,
+        pages: 304,
+        publisher: "Canongate"
+      },
+      {
+        title: "Where the Crawdads Sing",
+        author: "Delia Owens",
+        genre: "Mystery",
+        published_year: 2018,
+        price: 16.99,
+        in_stock: true,
+        pages: 384,
+        publisher: "G.P. Putnam's Sons"
+      },
+      {
+        title: "Dune",
+        author: "Frank Herbert",
+        genre: "Science Fiction",
+        published_year: 1965,
+        price: 18.99,
+        in_stock: false,
+        pages: 688,
+        publisher: "Chilton Books"
+      },
+      {
+        title: "1984",
+        author: "George Orwell",
+        genre: "Dystopian",
+        published_year: 1949,
+        price: 12.99,
+        in_stock: true,
+        pages: 328,
+        publisher: "Secker & Warburg"
+      },
+      {
+        title: "The Alchemist",
+        author: "Paulo Coelho",
+        genre: "Adventure",
+        published_year: 1988,
+        price: 11.99,
+        in_stock: true,
+        pages: 208,
+        publisher: "HarperOne"
+      },
+      {
+        title: "Sapiens",
+        author: "Yuval Noah Harari",
+        genre: "History",
+        published_year: 2011,
+        price: 21.99,
+        in_stock: true,
+        pages: 464,
+        publisher: "Harper"
+      },
 ];
 
 // Function to insert books into MongoDB
