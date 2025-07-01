@@ -45,3 +45,28 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 - [MongoDB Documentation](https://docs.mongodb.com/)
 - [MongoDB University](https://university.mongodb.com/)
 - [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+
+# UPDATED READ ME
+Bookstore MongoDB Project
+
+## Overview
+This project demonstrates MongoDB CRUD queries, aggregation pipelines, and indexing techniques on a books collection within the plp_bookstore database.
+It includes:
+
+Queries to find books based on stock and publication date
+
+Pagination and sorting
+
+Aggregation pipelines to analyze book data
+
+Index creation for performance optimization
+
+Using explain() to validate index usage
+
+## Database and Collection
+Database: plp_bookstore
+Collection: books
+
+Use "Mongosh" to run the data or get results on Mongo Compass.
+
+
