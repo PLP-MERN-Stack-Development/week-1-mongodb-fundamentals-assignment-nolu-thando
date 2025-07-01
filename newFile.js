@@ -1,6 +1,11 @@
 // This code snippet is for querying a MongoDB database to find books that are in stock and published after 2010,
 // while also sorting the results by price in descending order and implementing pagination.
 // Connect to MongoDB
+use('plp_bookstore');
+
+let page = 1;  // Set page number here
+let limit = 5;
+
 db.books.find({
   in_stock: true,
   published_year: { $gt: 2010 }
@@ -9,7 +14,7 @@ db.books.find({
   title: 1,
   author: 1,
   published_year: 1,
-  price
+  price: 1
 })
 .sort ({price: 1}) // Sort by price in ascending order
 .skip ((page - 1)*5)// Skip documents for pagination
@@ -24,7 +29,7 @@ db.books.find({
     title: 1,
     author: 1,
     published_year: 1,
-    price
+    price:1
   })
   .sort({ price: -1 }) // Sort by price in descending order
   .skip((page - 1) * 5) // Skip documents for pagination
